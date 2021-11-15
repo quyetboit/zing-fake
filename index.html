@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/grid-f8.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="nav-bar">
+            <div class="nav-bar__wrap-logo">
+                <a href="" class="nav-bar__logo">
+
+                </a href="">
+            </div>
+
+            <div class="nav-bar__nav">
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item active">
+                            <div class="nav__wrap-icon">
+                                <i class="nav__item-icon fas fa-compact-disc"></i>
+                            </div>
+                            Cá nhân
+                        </li>
+                        <li class="nav__item">
+                            <div class="nav__wrap-icon">
+                                <i class="nav__item-icon fas fa-headset"></i>
+                            </div>
+                            Khám phá
+                        </li>
+                        <li class="nav__item">
+                            <div class="nav__wrap-icon">
+                                <i class="nav__item-icon fas fa-chart-line"></i>
+                            </div>
+                            #zingchart
+                        </li>
+                        <li class="nav__item">
+                            <div class="nav__wrap-icon">
+                                <i class="nav__item-icon fas fa-podcast"></i>
+                            </div>
+                            Radio
+                            <span class="brand">LIVE</span>
+                        </li>
+                        <li class="nav__item">
+                            <div class="nav__wrap-icon">
+                                <i class="nav__item-icon fas fa-user-friends"></i>
+                            </div>
+                            Theo dõi
+                        </li>
+                        <div class="separete-horizontol"></div>
+                    </ul>
+                </div>
+
+
+                <div class="nav__category">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <div class="nav__wrap-icon">
+                                <i class="nav__item-icon fas fa-music"></i>
+                            </div>
+                            Nhạc mới
+                        </li>
+                        <li class="nav__item">
+                            <div class="nav__wrap-icon">
+                                <i class="nav__item-icon fas fa-notes-medical"></i>
+                            </div>
+                            Thể loại
+                        </li>
+                        <li class="nav__item">
+                            <div class="nav__wrap-icon">
+                                <i class="nav__item-icon far fa-star"></i>
+                            </div>
+                            Top 100
+                        </li>
+                        <li class="nav__item">
+                            <div class="nav__wrap-icon">
+                                <i class="nav__item-icon fab fa-youtube"></i>
+                            </div>
+                            MV
+                        </li>
+                    </ul>
+
+                    
+                    <div class="nav__category-option">
+                        <p>Nghe nhạc không quảng cáo và kho nhạc VIP</p>
+                        <a href="" class="btn buy-vip-btn">Mua VIP</a href="">
+                    </div>
+
+                    <ul class="nav__list">
+                        <h3 class="nav__category-head">
+                            <p>Thư viện</p>
+                            <span><i class="fas fa-pencil-alt"></i></span>
+                        </h3>
+
+                        <li class="nav__item">
+                            <div class="nav__wrap-icon">
+                                <img src="https://zjs.zadn.vn/zmp3-desktop/releases/v1.0.13/static/media/my-song.cf0cb0b4.svg" alt="">
+                            </div>
+                            Bài hát
+                        </li>
+                        <li class="nav__item">
+                            <div class="nav__wrap-icon">
+                                <img src="https://zjs.zadn.vn/zmp3-desktop/releases/v1.0.13/static/media/my-playlist.7e92a5f0.svg" alt="">
+                            </div>
+                            Playlist
+                        </li>
+                        <li class="nav__item">
+                            <div class="nav__wrap-icon">
+                                <img src="https://zjs.zadn.vn/zmp3-desktop/releases/v1.0.13/static/media/my-history.374cb625.svg" alt="">
+                            </div>
+                            Gàn đây
+                        </li>
+                        <li class="nav__item">
+                            <p> Đen vâu tổng hợp</p>
+                            <span>...</span>
+                        </li>
+                        <li class="nav__item">
+                            <p> Sơn Tùng M-TP tổng hợp</p>
+                            <span>...</span>
+                        </li>
+                        <li class="nav__item">
+                            <p>Những bản nhạc chill</p>
+                            <span>...</span>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+            <div class="nav-bar__create-playlist">
+                <span>
+                    <i class="fas fa-plus"></i>
+                </span>
+                <p>
+                    Tạo playlist mới
+                </p>
+            </div>
+        </div>
+
+        <div id="container">
+            <div class="container__content">
+                <div class="container__head">
+                    <div class="head__with-search">
+                        <div class="head__wrap-icon-navigate active">
+                            <i class="fas fa-arrow-left"></i>
+                        </div>
+                        <div class="head__wrap-icon-navigate">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="head__search">
+                            <input type="text" placeholder="Nhập tên bài hát, Nghệ sĩ, MV..." class="head__search-input">
+                            <ul class="head__history-search">
+                                <li class="head__history-item">
+                                    <i class="history__search-icon fas fa-search"></i>
+                                    Maroon 5
+                                </li>
+                                <li class="head__history-item">
+                                    <i class="history__search-icon fas fa-search"></i>
+                                    Avicii
+                                </li>
+                                <li class="head__history-item">
+                                    <i class="history__search-icon fas fa-search"></i>
+                                    Sơn Tùng Mtp
+                                </li>
+                                <li class="head__history-item">
+                                    <i class="history__search-icon fas fa-search"></i>
+                                    Đen Vâu
+                                </li>
+                                <li class="head__history-item">
+                                    <i class="history__search-icon fas fa-search"></i>
+                                    #zingchar
+                                </li>
+                                <li class="head__history-item">
+                                    <i class="history__search-icon fas fa-search"></i>
+                                    zingchoice
+                                </li>
+                            </ul>
+                            <span class="head__search-icon">
+                                <i class="fas fa-search"></i>
+                            </span>
+                        </div>
+                    </div>
+    
+                    <div class="head__user-option">
+                        <ul class="head__list-option">
+                            <li class="head__item-option popup-bottom" style="--content: 'Chủ đề'">
+                                <svg width="20" height="20" viewBox="0 0 20 20">
+                                    <defs>
+                                      <linearGradient id="j32lhg93hd" x1="62.206%" x2="18.689%" y1="70.45%" y2="39.245%">
+                                        <stop offset="0%" stop-color="#F81212">
+                                        </stop>
+                                        <stop offset="100%" stop-color="red">
+                                        </stop>
+                                      </linearGradient>
+                                      <linearGradient id="hjoavsus6g" x1="50%" x2="11.419%" y1="23.598%" y2="71.417%">
+                                        <stop offset="0%" stop-color="#00F">
+                                        </stop>
+                                        <stop offset="100%" stop-color="#0031FF">
+                                        </stop>
+                                      </linearGradient>
+                                      <linearGradient id="la1y5u3dvi" x1="65.655%" x2="25.873%" y1="18.825%" y2="56.944%">
+                                        <stop offset="0%" stop-color="#FFA600">
+                                        </stop>
+                                        <stop offset="100%" stop-color="orange">
+                                        </stop>
+                                      </linearGradient>
+                                      <linearGradient id="2dsmrlvdik" x1="24.964%" x2="63.407%" y1="8.849%" y2="55.625%">
+                                        <stop offset="0%" stop-color="#13EFEC">
+                                        </stop>
+                                        <stop offset="100%" stop-color="#00E8DF">
+                                        </stop>
+                                      </linearGradient>
+                                      <filter id="4a7imk8mze" width="230%" height="230%" x="-65%" y="-65%" filterUnits="objectBoundingBox">
+                                        <feGaussianBlur in="SourceGraphic" stdDeviation="3.9">
+                                        </feGaussianBlur>
+                                      </filter>
+                                      <filter id="301mo6jeah" width="312.7%" height="312.7%" x="-106.4%" y="-106.4%" filterUnits="objectBoundingBox">
+                                        <feGaussianBlur in="SourceGraphic" stdDeviation="3.9">
+                                        </feGaussianBlur>
+                                      </filter>
+                                      <filter id="b2zvzgq7fj" width="295%" height="295%" x="-97.5%" y="-97.5%" filterUnits="objectBoundingBox">
+                                        <feGaussianBlur in="SourceGraphic" stdDeviation="3.9">
+                                        </feGaussianBlur>
+                                      </filter>
+                                      <filter id="a1wq161tvl" width="256%" height="256%" x="-78%" y="-78%" filterUnits="objectBoundingBox">
+                                        <feGaussianBlur in="SourceGraphic" stdDeviation="3.9">
+                                        </feGaussianBlur>
+                                      </filter>
+                                      <path id="qtpqrj1oda" d="M3.333 14.167V5.833l-1.666.834L0 3.333 3.333 0h3.334c.04 1.57.548 2.4 1.524 2.492l.142.008C9.403 2.478 9.958 1.645 10 0h3.333l3.334 3.333L15 6.667l-1.667-.834v8.334h-10z">
+                                      </path>
+                                      <path id="jggzvnjgfc" d="M0 0H20V20H0z">
+                                      </path>
+                                      <path id="2eiwxjmc7m" d="M3.333 14.167V5.833l-1.666.834L0 3.333 3.333 0h3.334c.04 1.57.548 2.4 1.524 2.492l.142.008C9.403 2.478 9.958 1.645 10 0h3.333l3.334 3.333L15 6.667l-1.667-.834v8.334h-10z">
+                                      </path>
+                                    </defs>
+                                    <g fill="none" fill-rule="evenodd" transform="translate(2 3)">
+                                      <mask id="tinejqaasb" fill="#fff">
+                                        <use xlink:href="#qtpqrj1oda">
+                                        </use>
+                                      </mask>
+                                      <use fill="#FFF" fill-opacity="0" xlink:href="#qtpqrj1oda">
+                                      </use>
+                                      <g mask="url(#tinejqaasb)">
+                                        <g transform="translate(-2 -3)">
+                                          <mask id="uf3ckvfvpf" fill="#fff">
+                                            <use xlink:href="#jggzvnjgfc">
+                                            </use>
+                                          </mask>
+                                          <use fill="#D8D8D8" xlink:href="#jggzvnjgfc">
+                                          </use>
+                                          <circle cx="8.9" cy="6.8" r="9" fill="url(#j32lhg93hd)" filter="url(#4a7imk8mze)" mask="url(#uf3ckvfvpf)">
+                                          </circle>
+                                          <circle cx="9.3" cy="13.7" r="5.5" fill="url(#hjoavsus6g)" filter="url(#301mo6jeah)" mask="url(#uf3ckvfvpf)">
+                                          </circle>
+                                          <circle cx="15.9" cy="6.9" r="6" fill="url(#la1y5u3dvi)" filter="url(#b2zvzgq7fj)" mask="url(#uf3ckvfvpf)">
+                                          </circle>
+                                          <circle cx="16.4" cy="17.7" r="7.5" fill="url(#2dsmrlvdik)" filter="url(#a1wq161tvl)" mask="url(#uf3ckvfvpf)">
+                                          </circle>
+                                        </g>
+                                      </g>
+                                      <use fill="#FFF" fill-opacity="0.05" xlink:href="#2eiwxjmc7m">
+                                      </use>
+                                    </g>
+                                  </svg>
+                            </li>
+                            <li class="head__item-option popup-bottom" style="--content: 'Tải lên'">
+                                <i class="fas fa-upload"></i>
+                            </li>
+                            <li class="head__item-option popup-bottom" style="--content: 'Cài đặt'">
+                                <i class="fas fa-cog"></i>
+                            </li>
+                            <li class="head__item-option">
+                                <img src="./assets/img/user.jpg" alt="" class="head__option-img">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="container__user">
+                    <img src="./assets/img/user.jpg" alt="" class="user__avata">
+                    <h3 class="user__name">Quyết Lê</h3>
+                    <ul class="user__action">
+                        <li class="user__action-item">
+                            <a href="" class="btn user__action-buy-vip">Mua VIP ngay</a>
+                        </li>
+                        <li class="user__action-item">
+                            <a href="" class="btn enter-code-btn">Nhập code VIP</a>
+                        </li>
+                        <li class="user__action-item" title="Khác">
+                            <span class="user__other-action">...</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="container__nav">
+                    <ul class="container__nav-list">
+                        <li class="container__nav-item active">
+                            <a href="" class="btn btn-size-s container__nav-btn">Tổng quan</a>
+                        </li>
+                        <li class="container__nav-item">
+                            <a href="" class="btn btn-size-s container__nav-btn">Bài hát</a>
+                        </li>
+                        <li class="container__nav-item">
+                            <a href="" class="btn btn-size-s container__nav-btn">Playlist</a>
+                        </li>
+                        <li class="container__nav-item">
+                            <a href="" class="btn btn-size-s container__nav-btn">Nghệ sĩ</a>
+                        </li>
+                        <li class="container__nav-item">
+                            <a href="" class="btn btn-size-s container__nav-btn">Album</a>
+                        </li>
+                        <li class="container__nav-item">
+                            <a href="" class="btn btn-size-s container__nav-btn">MV</a>
+                        </li>
+                        <li class="container__nav-item">
+                            <a href="" class="btn btn-size-s container__nav-btn">Tải lên</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="container__overview">
+                    <div class="overview__wrapper">
+                        <div class="overview__wrapper-head">
+                            <a href="" class="overview__head-title">
+                                <h3>Bài Hát</h3>
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                            <div class="overview__head-option">
+                                <div class="btn btn-size-l overview__option-upload-btn">
+                                    <i class="fas fa-upload"></i>
+                                    Tải lên
+                                </div>
+                                <div class="btn btl-size-l overview__option-play-all-btn">
+                                    <i class="fas fa-play"></i>
+                                    Phát tất cả
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="overview__wrapper-songs">
+                            <div class="overview__songs_slider">
+                                <ul class="overview__slider-list">
+                                    <!-- render by javascript -->
+                                </ul>
+                            </div>
+
+                            <div class="overview__songs">
+                                <ul class="overview__list-song">
+                                 <!-- songs item -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Playlist -->
+                    <div class="overview__wrapper">
+                        <div class="overview__wrapper-head">
+                            <a href="" class="overview__head-title">
+                                <h3>Playlist</h3>
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                            <div class="overview__head-option">
+                                <div class="overview__head-option-wrap-icon">
+                                    <i class="fas fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="overview__wrap-playlist">
+                            <div class="overview__content-list gird">
+                                <div class="row">
+                                    <div class="col l-2-4">
+                                        <div class="overview__content-item">
+                                            <div class="overview__add-playlist">
+                                                <i class="fas fa-plus"></i>
+                                                <span>Tạo playlist mới</span>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col l-2-4">
+                                        <div class="overview__content-item">
+                                            <div class="overview__content-item-wrap-img">
+                                                <div class="overlay"></div>
+                                                <img src="./assets/img/user-playlist1.jfif" alt="" class="overview__item-img">
+                                                <div class="overview__content-img-control">
+                                                    <span class="popup-top" style="--content:'Xoá'">
+                                                        <i class="fas fa-times icon-control"></i>
+                                                    </span>
+                                                    <i class="far fa-play-circle icon-play" title="Nhạc sưu tầm"></i>
+                                                    <span class="other-icon popup-top" style="--content:'Xoá'">...</span>
+                                                </div>
+                                            </div>
+                                            <div class="overview__content-detail">
+                                                <a href="" class="overview__detail-head">Nhạc sưu tầm</a>
+                                                <p class="overview__detail-creator">Quyết Văn Lê</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nghệ sĩ  -->
+                    <div class="overview__wrapper">
+                        <div class="overview__wrapper-head">
+                            <a href="" class="overview__head-title">
+                                <h3>Nghệ sĩ</h3>
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                            <div class="overview__head-option">
+                                <div class="overview__head-option-wrap-icon">
+                                    <i class="fas fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="overview__wrap-artists">
+                            <div class="overview__content-list gird">
+                                <div class="row">
+    
+                                    <div class="col l-2-4">
+                                        <div class="overview__content-item">
+                                            <div class="overview__content-item-wrap-img border-radius-50percent">
+                                                <img src="./assets/img/son-tung-mtp.jpg" alt="" class="overview__item-img">
+                                                <div class="overview__content-img-control">
+                                                    <i class="far fa-play-circle icon-play" title="Nhạc sưu tầm"></i>
+                                                </div>
+                                            </div>
+                                            <div class="overview__artists-detail">
+                                                <a href="" class="overview__artists-name">Sơn Tùng M-TP</a>
+                                                <span class="overview__total-flow">2.1M Quan tâm</span>
+                                                <div class="btn btn-size-l overview__isflowed">
+                                                    <i class="fas fa-check"></i>
+                                                    Đã quan tâm
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col l-2-4">
+                                        <div class="overview__content-item">
+                                            <div class="overview__content-item-wrap-img border-radius-50percent">
+                                                <img src="./assets/img/mozart.jpg" alt="" class="overview__item-img">
+                                                <div class="overview__content-img-control">
+                                                    <i class="far fa-play-circle icon-play" title="Nhạc sưu tầm"></i>
+                                                </div>
+                                            </div>
+                                            <div class="overview__artists-detail">
+                                                <a href="" class="overview__artists-name">Mozart</a>
+                                                <span class="overview__total-flow">43k Quan tâm</span>
+                                                <div class="btn btn-size-l overview__isflowed">
+                                                    <i class="fas fa-check"></i>
+                                                    Đã quan tâm
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="control">
+            <audio src="" class="control__audio"></audio>
+            <div class="control__left">
+                <div class="control__left-curent-song">
+                    <img src="" alt="" class="control__left-song-thumb">
+                    <div class="control__left-song-infor">
+                        <a href="" class="control__left-song-name"></a>
+                        <span class="control__left-song-wrap-author"></span>
+                    </div>
+                    <span class="control__left-action-icon">
+                        <i class="far fa-heart"></i>
+                    </span>
+                    <span class="control__left-action-icon other-icon">...</span>
+                </div>
+            </div>
+
+            <div class="control__center">
+                <div class="control__center-main">
+                    <i class="control__center-icon icon-ramdom fas fa-random"></i>
+                    <i class="control__center-icon icon-pre fas fa-step-backward"></i>
+                    <span class="control__wrap-pause-play">
+                        <i class="control__center-icon-play far fa-play-circle"></i>
+                        <i class="control__center-icon-pause far fa-pause-circle"></i>
+                    </span>
+                    <i class="control__center-icon icon-next fas fa-step-forward"></i>
+                    <i class="control__center-icon icon-loop fas fa-undo"></i>
+                </div>
+                <div class="control__center-duration">
+                    <span class="duration__curent-time">00:00</span>
+                    <input class="duration__bar" type="range" min="0" max="100" step="1" value="0">
+                    <span class="duration__total-time"></span>
+                </div>
+            </div>
+
+            <div class="control__right">
+                <i class="control__right-icon fas fa-microphone"></i>
+                <i class="control__right-icon far fa-window-restore"></i>
+                <div class="control__right-custom-volume    ">
+                    <i class="control__right-icon icon-unmute fas fa-volume-up"></i>
+                    <i class="control__right-icon icon-mute fas fa-volume-mute"></i>
+                    <input class="control__right-volume-bar" type="range" min="0" max="10" step="1" value="10" >
+                </div>
+                <i class="control__right-icon fas fa-clipboard-list"></i>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="module" src="./JS/main.js"></script>
+</html>
